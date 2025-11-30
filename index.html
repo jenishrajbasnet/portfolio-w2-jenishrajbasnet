@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenish Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="video-background">
+      <source src="video/bg-browser.mp4" type="video/mp4" />
+    </video>
+
+    <div class="page-wrapper">
+      <!-- Scroll bar -->
+      <div id="scroll-progress"></div>
+
+      <!-- HEADER -->
+      <header id="hero">
+        <nav class="navbar">
+          <div class="logo">jenish.exe</div>
+
+          <!-- Mobile menu -->
+          <button
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="menu-button"
+          >
+            ☰
+          </button>
+
+          <!-- Nav links -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="projects.html">More Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+
+          <!-- Theme toggle -->
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark/light mode"
+          >
+            🌙
+          </button>
+        </nav>
+
+        <!-- Hero section -->
+        <div class="hero-content fade-in">
+          <h1>Jenish Raj Basnet</h1>
+          <p class="roles">Frontend Developer · Game Developer · Student</p>
+          <p class="hero-tagline">
+            Crafting cozy games and web experiences with a lofi, peaceful vibe.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn ghost">Say Hi</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <!-- ABOUT -->
+        <section id="about" class="section fade-in">
+          <h2>About</h2>
+          <p>
+            Jenish is a BIT honours student who loves making games, playing
+            ukulele and guitar, and exploring peaceful places with a warm cup of
+            tea.
+          </p>
+          <p>
+            Mixing game design with frontend development, Jenish enjoys building
+            interactive worlds more than raw coding, but uses code as the tool
+            to bring those worlds to life.
+          </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section fade-in">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card float">
+              <div class="skill-icon html-icon">&lt;/&gt;</div>
+              <h3>HTML</h3>
+              <p>Semantic, accessible, and structured layouts.</p>
+            </div>
+
+            <div class="skill-card float">
+              <div class="skill-icon css-icon">#</div>
+              <h3>CSS</h3>
+              <p>Responsive layouts with Flexbox, Grid, and lofi themes.</p>
+            </div>
+
+            <div class="skill-card float">
+              <div class="skill-icon js-icon">JS</div>
+              <h3>JavaScript</h3>
+              <p>Interactive UI, DOM effects, and small games.</p>
+            </div>
+
+            <div class="skill-card spin">
+              <div class="skill-icon java-icon">J</div>
+              <h3>Basic Java</h3>
+              <p>OOP fundamentals and problem-solving basics.</p>
+            </div>
+
+            <div class="skill-card bob">
+              <div class="skill-icon unity-icon">🧪</div>
+              <h3>Unity</h3>
+              <p>3D labs, physics, and 2D/3D game prototypes.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section fade-in">
+          <h2>Projects</h2>
+
+          <div class="projects-grid">
+            <article class="project-card hover-lift">
+              <h3>Virtual Science Lab</h3>
+              <p>A 3D virtual science lab built in Unity…</p>
+              <ul class="tags">
+                <li>Unity</li>
+                <li>3D</li>
+                <li>Game Design</li>
+              </ul>
+            </article>
+
+            <article class="project-card hover-lift">
+              <h3>3D Car Racing Game</h3>
+              <p>A physics-based car game…</p>
+              <ul class="tags">
+                <li>Unity</li>
+                <li>Physics</li>
+                <li>HUD</li>
+              </ul>
+            </article>
+
+            <article class="project-card hover-lift">
+              <h3>2D Flappy-Style Game</h3>
+              <p>A 2D endless runner…</p>
+              <ul class="tags">
+                <li>Unity</li>
+                <li>2D</li>
+                <li>Game Loop</li>
+              </ul>
+            </article>
+
+            <article class="project-card hover-lift wip">
+              <h3>2048 Clone (WIP)</h3>
+              <p>A 2048-style puzzle game…</p>
+              <ul class="tags">
+                <li>JavaScript</li>
+                <li>Game Logic</li>
+                <li>In Progress</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section fade-in">
+          <h2>Contact</h2>
+          <p>Want to talk about games or collabs? Drop a message below.</p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Send Message</button>
+            <div id="form-message" class="form-message"></div>
+          </form>
+        </section>
+
+        <!-- MUSIC SECTION -->
+        <section id="music" class="section fade-in">
+          <h2>Lofi Music Corner</h2>
+          <p>Choose a track and relax while exploring the portfolio.</p>
+
+          <div class="music-player">
+            <audio id="audio-player" preload="auto">
+              <source
+                id="audio-source"
+                src="audio/track1.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+
+            <div class="music-info">
+              <span id="track-title">Lofi Track 1</span>
+            </div>
+
+            <div class="music-controls">
+              <button id="prev-track" class="btn-icon">⏮</button>
+              <button id="play-pause" class="btn-icon">▶</button>
+              <button id="next-track" class="btn-icon">⏭</button>
+            </div>
+          </div>
+
+          <div class="playlist">
+            <button class="playlist-item active" data-index="0">
+              Lofi Track 1
+            </button>
+            <button class="playlist-item" data-index="1">Lofi Track 2</button>
+            <button class="playlist-item" data-index="2">Lofi Track 3</button>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p>© <span id="year"></span> jenish.exe · Built with lofi vibes.</p>
+      </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
