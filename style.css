@@ -65,8 +65,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2;
-  filter: brightness(0.3) saturate(1.1);
+  z-index: -1;
+  pointer-events: none; /* ← add this */
 }
 
 body.dark #video-background {
@@ -76,12 +76,12 @@ body.dark #video-background {
 /* Overlay to make text readable */
 .page-wrapper {
   min-height: 100vh;
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
-    rgba(253, 247, 255, 0.88),
-    rgba(243, 236, 255, 0.88)
-  );
-  backdrop-filter: blur(18px);
+    rgba(253, 247, 255, 0.75),
+    rgba(243, 236, 255, 0.75)
+  ); */
+  /* backdrop-filter: blur(18px); */
 }
 
 body.dark .page-wrapper {
